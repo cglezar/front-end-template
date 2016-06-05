@@ -5,6 +5,7 @@ define([],function(){
     var self = this;
 
     self.getUsers = getUsers;
+    self.flag = true;
 
     /////////////////////////////////////
 
