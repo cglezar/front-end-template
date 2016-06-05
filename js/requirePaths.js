@@ -1,6 +1,7 @@
 var requirePaths = {
   /* Libs */
   'angular': 'bower_components/angular/angular.min',
+  'angular-mocks': 'bower_components/angular-mocks/angular-mocks',
   'bootstrap': 'bower_components/bootstrap/dist/js/bootstrap.min',
   'jquery': 'bower_components/jquery/dist/jquery.min',
   /* Angular Modules */
@@ -14,5 +15,7 @@ var requirePaths = {
 
 var requireShim = {
   'app': ['angular','bootstrap'],
-  'bootstrap': ['jquery']
+  'users': ['angular'],
+  'bootstrap': ['jquery'],
+  'angular-mocks': ['angular']
 };
