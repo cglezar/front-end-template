@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Front end template</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <!-- Javascript -->
+    <script src="js\requirePaths.js" charset="utf-8"></script>
+  </head>
+  <body ng-controller="UsersController as usersCtrl">
+    <br>
+    <div class="container">
+      <div class="col-md-6">
+        <div class="panel">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <h3>Users</h3>
+            </div>
+          </div>
+          <div class="panel-body">
+            <table class="table table-striped">
+              <tr>
+                <th>Name</th>
+                <th>Last Name</th>
+              </tr>
+              <tr ng-repeat="user in usersCtrl.users">
+                <td>{{ user.name }}</td>
+                <td>{{ user.lastName }}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <footer>
+    <script data-main="js\require.config.js" src="bower_components\requirejs\require.js" charset="utf-8"></script>
+  </footer>
+</html>
