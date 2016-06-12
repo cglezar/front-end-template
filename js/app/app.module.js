@@ -5,10 +5,15 @@ define(['users'],function(users){
   app.config(['$routeProvider', function($routeProvider){
 
     $routeProvider.when('/users',{
-      templateUrl: 'views/users.html',
-      controller: 'UsersController as usersCtrl'
+      templateUrl: 'views/app/users/users.html',
+      controller: 'UsersController',
+      controllerAs: 'usersCtrl'
+    }).when('/addUser',{
+      templateUrl: 'views/app/users/addUser.html',
+      controller: 'AddUserController',
+      controllerAs: 'addUserCtrl'
     }).otherwise('/users');
-    
+
   }]);
 
   return app;

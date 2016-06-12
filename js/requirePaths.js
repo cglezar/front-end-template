@@ -10,6 +10,7 @@ var requirePaths = {
   'users': 'js/app/users/users.module',
   /* Angular Controllers */
   'usersController': 'js/app/users/users.ctrl',
+  'addUserController': 'js/app/users/addUser.ctrl',
   /* Angular Services */
   'usersService': 'js/app/users/users.service'
 };
