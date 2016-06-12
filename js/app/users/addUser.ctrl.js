@@ -5,7 +5,7 @@ define([],function(){
     var self = this;
 
     self.user = {};
-    self.users = localStorageService.get('users');
+    self.users = localStorageService.get('users') || [];
     self.newUser = newUser;
 
     /////////////////////////////////////

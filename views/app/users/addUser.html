@@ -6,9 +6,9 @@
       </div>
     </div>
     <div class="panel-body">
-      <a href="#/users" class="btn btn-primary"> Back </a>
+      <a href="#/users" id="backBtn" class="btn btn-primary"> Back </a>
       <br><br>
-      <form ng-submit="addUserCtrl.newUser()">
+      <form ng-submit="addUserCtrl.newUser()" id="newUserForm">
        <div class="form-group">
          <label>Name</label>
          <input type="text" class="form-control" ng-model="addUserCtrl.user.name" placeholder="First Name">
