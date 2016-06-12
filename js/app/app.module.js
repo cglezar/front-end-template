@@ -1,6 +1,10 @@
 define(['users'],function(users){
 
-  var app = angular.module('app',['ngRoute', 'app.users']);
+  var app = angular.module('app',['ngRoute', 'LocalStorageModule', 'app.users']);
+
+  app.config(['localStorageServiceProvider', function(localStorageServiceProvider){
+    localStorageServiceProvider.setPrefix('wtco');
+  }]);
 
   app.config(['$routeProvider', function($routeProvider){
 

@@ -1,4 +1,6 @@
-define(['usersController','addUserController','usersService'],function(usersController, addUserController, usersService ){
+define(['usersController','addUserController','usersService'],
+function(usersController, addUserController, usersService)
+{
 
   var users = angular.module('app.users',[]);
 
